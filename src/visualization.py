@@ -37,10 +37,10 @@ def generate_midi_vis(midi_path):
             return None
 
         fig, ax = plt.subplots(figsize=(10, 5))
-        colors = {0: 'blue', 1: 'green', 9: 'red'}  # piano: blue, bass: green, drums: red
+        colors = {0: 'blue', 1: 'green', 9: 'red', 10: 'red'}  # Add channel 10 for standard drum channel
         for start, dur, note, channel in notes:
             color = colors.get(channel, 'black')
-            ax.add_patch(patches.Rectangle((start, note - 0.5), dur, 1, facecolor=color, edgecolor='black'))
+            ax.add_patch(patches.Rectangle((start, note - 0.5), dur, 1, facecolor=color, edgecolor=color))
         ax.set_xlim(0, max(start + dur for start, dur, _, _ in notes) + 1)
         ax.set_ylim(0, 128)
         ax.set_xlabel('Time (seconds)')
