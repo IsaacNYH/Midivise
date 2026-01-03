@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MIDivise</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>900</width>
+      <height>550</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="Drums">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <attribute name="title">
+      <string>Drums</string>
+     </attribute>
+     <widget class="QWidget" name="widget_drums" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>850</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>850</width>
+        <height>450</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #555;
+border-radius: 6px;
+background-color: #f5f5f5;
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Drums</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_openDrumsWav">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open .wav</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_toDrums">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>10</y>
+        <width>71</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Go to File...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_openDrumsMidi">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open .mid</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pathToDrums">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>551</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>No file selected (.wav/.mp3)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Bass">
+     <attribute name="title">
+      <string>Bass</string>
+     </attribute>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bass</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_bass" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>850</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>850</width>
+        <height>450</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #555;
+border-radius: 6px;
+background-color: #f5f5f5;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_openBassWav">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open .wav</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_toBass">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>10</y>
+        <width>71</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Go to File...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_openBassMidi">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open .mid</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pathToBass">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>551</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>No file selected (.wav/.mp3)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Piano">
+     <attribute name="title">
+      <string>Piano / Others</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_openPianoMidi">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open .mid</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_piano" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>850</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>850</width>
+        <height>450</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #555;
+border-radius: 6px;
+background-color: #f5f5f5;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_toPiano">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>10</y>
+        <width>71</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Go to File...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Piano/Others</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_openPianoWav">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open .wav</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pathToPiano">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>10</y>
+        <width>501</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>No file selected (.wav/.mp3)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Vocals">
+     <attribute name="title">
+      <string>Vocals (.wav)</string>
+     </attribute>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vocals</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_openVocalsWav">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open .wav</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_toVocals">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>10</y>
+        <width>71</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Go to File...</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_vocals" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>850</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>850</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #555;
+border-radius: 6px;
+background-color: #f5f5f5;
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pathToVocals">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>631</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>No file selected (.wav/.mp3)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_vocals_merged" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>290</y>
+        <width>850</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>850</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #555;
+border-radius: 6px;
+background-color: #f5f5f5;
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Merge Vocals</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>260</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>drums.mid</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>bass.mid</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>piano.mid</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_toMergedVocals">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>260</y>
+        <width>71</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Go to File...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pathToMergedVocals">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>260</y>
+        <width>391</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>No file selected (.wav/.mp3)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_openMergedVocalsWav">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>260</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open .wav</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_merge">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>260</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Merge</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

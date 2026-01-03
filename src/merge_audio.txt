@@ -1,0 +1,19 @@
+def merge_audio(audio_paths):
+    try:
+        audios = []
+        sr = None
+        max_len = 0
+        for p in audio_paths:
+            a, s = librosa.load(str(p), sr=None)
+            audios.append(a)
+            sr = s
+            max_len = max(max_len, len(a))
+        for i in range(len(audios)):
+            if len(audios[i]) < max_len:
+                audios[i] = np.pad(audios[i], (0, max_len - len(audios[i])))
+        merged = np.sum(audios, axis=0)  # Sum for reconstruction
+        logging.info(f"Merged {len(audio_paths)} audio tracks")
+        return merged, sr
+    except Exception as e:
+        logging.error(f"Audio merge failed: {str(e)}")
+        raise RuntimeError(f"Audio merge failed: {str(e)}")
